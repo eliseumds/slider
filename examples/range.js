@@ -1,11 +1,4 @@
-webpackJsonp([4],{
-
-/***/ 11:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+webpackJsonp([3],{
 
 /***/ 190:
 /***/ (function(module, exports, __webpack_require__) {
@@ -30,14 +23,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_possibleConstructorReturn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_possibleConstructorReturn__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rc_slider_assets_index_less__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rc_slider_assets_index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rc_slider_assets_index_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_eliseumds_rc_slider_assets_index_less__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_eliseumds_rc_slider_assets_index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_eliseumds_rc_slider_assets_index_less__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_dom__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_dom__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rc_slider__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rc_slider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rc_slider__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_eliseumds_rc_slider__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_eliseumds_rc_slider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_eliseumds_rc_slider__);
 
 
 
@@ -50,7 +43,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var Range = __WEBPACK_IMPORTED_MODULE_8_rc_slider___default.a.Range;
+var Range = __WEBPACK_IMPORTED_MODULE_8_eliseumds_rc_slider___default.a.Range;
 
 var style = { width: 400, margin: 50 };
 
@@ -98,33 +91,45 @@ var CustomizedRange = function (_React$Component) {
   }
 
   __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_createClass___default()(CustomizedRange, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-        'div',
+        "div",
         null,
         __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-          'label',
+          "label",
           null,
-          'LowerBound: '
+          "LowerBound: "
         ),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('input', { type: 'number', value: this.state.lowerBound, onChange: this.onLowerBoundChange }),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('br', null),
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement("input", {
+          type: "number",
+          value: this.state.lowerBound,
+          onChange: this.onLowerBoundChange
+        }),
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement("br", null),
         __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-          'label',
+          "label",
           null,
-          'UpperBound: '
+          "UpperBound: "
         ),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('input', { type: 'number', value: this.state.upperBound, onChange: this.onUpperBoundChange }),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('br', null),
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement("input", {
+          type: "number",
+          value: this.state.upperBound,
+          onChange: this.onUpperBoundChange
+        }),
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement("br", null),
         __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-          'button',
+          "button",
           { onClick: this.handleApply },
-          'Apply'
+          "Apply"
         ),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('br', null),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('br', null),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, { allowCross: false, value: this.state.value, onChange: this.onSliderChange })
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement("br", null),
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement("br", null),
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, {
+          allowCross: false,
+          value: this.state.value,
+          onChange: this.onSliderChange
+        })
       );
     }
   }]);
@@ -164,27 +169,38 @@ var DynamicBounds = function (_React$Component2) {
   }
 
   __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_createClass___default()(DynamicBounds, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-        'div',
+        "div",
         null,
         __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-          'label',
+          "label",
           null,
-          'Min: '
+          "Min: "
         ),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('input', { type: 'number', value: this.state.min, onChange: this.onMinChange }),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('br', null),
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement("input", {
+          type: "number",
+          value: this.state.min,
+          onChange: this.onMinChange
+        }),
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement("br", null),
         __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-          'label',
+          "label",
           null,
-          'Max: '
+          "Max: "
         ),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('input', { type: 'number', value: this.state.max, onChange: this.onMaxChange }),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('br', null),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('br', null),
-        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, { defaultValue: [20, 50], min: this.state.min, max: this.state.max,
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement("input", {
+          type: "number",
+          value: this.state.max,
+          onChange: this.onMaxChange
+        }),
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement("br", null),
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement("br", null),
+        __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, {
+          defaultValue: [20, 50],
+          min: this.state.min,
+          max: this.state.max,
           onChange: this.onSliderChange
         })
       );
@@ -215,7 +231,7 @@ var ControlledRange = function (_React$Component3) {
   }
 
   __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_createClass___default()(ControlledRange, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, { value: this.state.value, onChange: this.handleChange });
     }
@@ -245,7 +261,7 @@ var ControlledRangeDisableAcross = function (_React$Component4) {
   }
 
   __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_createClass___default()(ControlledRangeDisableAcross, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({
         value: this.state.value,
@@ -283,9 +299,13 @@ var PureRenderRange = function (_React$Component5) {
   }
 
   __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_createClass___default()(PureRenderRange, [{
-    key: 'render',
+    key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, { defaultValue: [20, 40, 60, 80], onChange: this.handleChange, allowCross: false });
+      return __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, {
+        defaultValue: [20, 40, 60, 80],
+        onChange: this.handleChange,
+        allowCross: false
+      });
     }
   }]);
 
@@ -293,133 +313,141 @@ var PureRenderRange = function (_React$Component5) {
 }(__WEBPACK_IMPORTED_MODULE_6_react___default.a.Component);
 
 __WEBPACK_IMPORTED_MODULE_7_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-  'div',
+  "div",
   null,
   __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Basic Range\uFF0C`allowCross=false`'
+      "Basic Range\uFF0C`allowCross=false`"
     ),
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, { allowCross: false, defaultValue: [0, 20], onChange: log })
   ),
   __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Basic Range\uFF0C`step=20` '
+      "Basic Range\uFF0C`step=20` "
     ),
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, { step: 20, defaultValue: [20, 20], onBeforeChange: log })
   ),
   __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Basic Range\uFF0C`step=20, dots` '
+      "Basic Range\uFF0C`step=20, dots` "
     ),
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, { dots: true, step: 20, defaultValue: [20, 40], onAfterChange: log })
   ),
   __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Basic Range\uFF0Cdisabled'
+      "Basic Range\uFF0Cdisabled"
     ),
-    __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, { allowCross: false, defaultValue: [0, 20], onChange: log, disabled: true })
+    __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, {
+      allowCross: false,
+      defaultValue: [0, 20],
+      onChange: log,
+      disabled: true
+    })
   ),
   __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Controlled Range'
+      "Controlled Range"
     ),
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(ControlledRange, null)
   ),
   __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Controlled Range, not allow across'
+      "Controlled Range, not allow across"
     ),
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(ControlledRangeDisableAcross, null)
   ),
   __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Controlled Range, not allow across, pushable=5'
+      "Controlled Range, not allow across, pushable=5"
     ),
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(ControlledRangeDisableAcross, { pushable: 5 })
   ),
   __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Multi Range'
+      "Multi Range"
     ),
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, { count: 3, defaultValue: [20, 40, 60, 80], pushable: true })
   ),
   __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Multi Range with custom track and handle style'
+      "Multi Range with custom track and handle style"
     ),
-    __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, { count: 3, defaultValue: [20, 40, 60, 80], pushable: true,
-      trackStyle: [{ backgroundColor: 'red' }, { backgroundColor: 'green' }],
-      handleStyle: [{ backgroundColor: 'yellow' }, { backgroundColor: 'gray' }],
-      railStyle: { backgroundColor: 'black' }
+    __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(Range, {
+      count: 3,
+      defaultValue: [20, 40, 60, 80],
+      pushable: true,
+      trackStyle: [{ backgroundColor: "red" }, { backgroundColor: "green" }],
+      handleStyle: [{ backgroundColor: "yellow" }, { backgroundColor: "gray" }],
+      railStyle: { backgroundColor: "black" }
     })
   ),
   __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Customized Range'
+      "Customized Range"
     ),
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(CustomizedRange, null)
   ),
   __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Range with dynamic `max` `min`'
+      "Range with dynamic `max` `min`"
     ),
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(DynamicBounds, null)
   ),
   __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Range as child component'
+      "Range as child component"
     ),
     __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(PureRenderRange, null)
   )
-), document.getElementById('__react-content'));
+), document.getElementById("__react-content"));
 
 /***/ })
 

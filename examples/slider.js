@@ -1,11 +1,4 @@
-webpackJsonp([3],{
-
-/***/ 11:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+webpackJsonp([2],{
 
 /***/ 192:
 /***/ (function(module, exports, __webpack_require__) {
@@ -28,14 +21,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_possibleConstructorReturn__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rc_slider_assets_index_less__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rc_slider_assets_index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rc_slider_assets_index_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_eliseumds_rc_slider_assets_index_less__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_eliseumds_rc_slider_assets_index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_eliseumds_rc_slider_assets_index_less__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_dom__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_dom__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rc_slider__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rc_slider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rc_slider__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider__);
 
 
 
@@ -54,10 +47,10 @@ function log(value) {
 }
 
 function percentFormatter(v) {
-  return v + ' %';
+  return v + " %";
 }
 
-var SliderWithTooltip = Object(__WEBPACK_IMPORTED_MODULE_7_rc_slider__["createSliderWithTooltip"])(__WEBPACK_IMPORTED_MODULE_7_rc_slider___default.a);
+var SliderWithTooltip = Object(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider__["createSliderWithTooltip"])(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default.a);
 
 var NullableSlider = function (_React$Component) {
   __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_inherits___default()(NullableSlider, _React$Component);
@@ -79,7 +72,7 @@ var NullableSlider = function (_React$Component) {
     };
 
     _this.reset = function () {
-      console.log('reset value'); // eslint-disable-line
+      console.log("reset value"); // eslint-disable-line
       _this.setState({ value: null });
     };
 
@@ -90,20 +83,20 @@ var NullableSlider = function (_React$Component) {
   }
 
   __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_createClass___default()(NullableSlider, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-        'div',
+        "div",
         null,
-        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_rc_slider___default.a, {
+        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default.a, {
           value: this.state.value,
           onChange: this.onSliderChange,
           onAfterChange: this.onAfterChange
         }),
         __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-          'button',
+          "button",
           { onClick: this.reset },
-          'Reset'
+          "Reset"
         )
       );
     }
@@ -138,10 +131,12 @@ var CustomizedSlider = function (_React$Component2) {
   }
 
   __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_createClass___default()(CustomizedSlider, [{
-    key: 'render',
+    key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_rc_slider___default.a, { value: this.state.value,
-        onChange: this.onSliderChange, onAfterChange: this.onAfterChange
+      return __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default.a, {
+        value: this.state.value,
+        onChange: this.onSliderChange,
+        onAfterChange: this.onAfterChange
       });
     }
   }]);
@@ -181,27 +176,38 @@ var DynamicBounds = function (_React$Component3) {
   }
 
   __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_createClass___default()(DynamicBounds, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-        'div',
+        "div",
         null,
         __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-          'label',
+          "label",
           null,
-          'Min: '
+          "Min: "
         ),
-        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement('input', { type: 'number', value: this.state.min, onChange: this.onMinChange }),
-        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement('br', null),
+        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement("input", {
+          type: "number",
+          value: this.state.min,
+          onChange: this.onMinChange
+        }),
+        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement("br", null),
         __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-          'label',
+          "label",
           null,
-          'Max: '
+          "Max: "
         ),
-        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement('input', { type: 'number', value: this.state.max, onChange: this.onMaxChange }),
-        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement('br', null),
-        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement('br', null),
-        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_rc_slider___default.a, { defaultValue: 50, min: this.state.min, max: this.state.max,
+        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement("input", {
+          type: "number",
+          value: this.state.max,
+          onChange: this.onMaxChange
+        }),
+        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement("br", null),
+        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement("br", null),
+        __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default.a, {
+          defaultValue: 50,
+          min: this.state.min,
+          max: this.state.max,
           onChange: this.onSliderChange
         })
       );
@@ -212,171 +218,178 @@ var DynamicBounds = function (_React$Component3) {
 }(__WEBPACK_IMPORTED_MODULE_5_react___default.a.Component);
 
 __WEBPACK_IMPORTED_MODULE_6_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-  'div',
+  "div",
   null,
   __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Basic Slider'
+      "Basic Slider"
     ),
-    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_rc_slider___default.a, { onChange: log })
+    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default.a, { onChange: log })
   ),
   __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Basic Slider\uFF0C`step=20`'
+      "Basic Slider\uFF0C`step=20`"
     ),
-    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_rc_slider___default.a, { step: 20, defaultValue: 50, onBeforeChange: log })
+    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default.a, { step: 20, defaultValue: 50, onBeforeChange: log })
   ),
   __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Basic Slider\uFF0C`step=20, dots`'
+      "Basic Slider\uFF0C`step=20, dots`"
     ),
-    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_rc_slider___default.a, { dots: true, step: 20, defaultValue: 100, onAfterChange: log })
+    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default.a, { dots: true, step: 20, defaultValue: 100, onAfterChange: log })
   ),
   __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Basic Slider\uFF0C`step=20, dots, dotStyle=',
+      "Basic Slider\uFF0C`step=20, dots, dotStyle=",
       "{borderColor: 'orange'}",
-      ', activeDotStyle=',
+      ", activeDotStyle=",
       "{borderColor: 'yellow'}",
-      '`'
+      "`"
     ),
-    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_rc_slider___default.a, { dots: true, step: 20, defaultValue: 100, onAfterChange: log, dotStyle: { borderColor: 'orange' }, activeDotStyle: { borderColor: 'yellow' } })
+    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default.a, {
+      dots: true,
+      step: 20,
+      defaultValue: 100,
+      onAfterChange: log,
+      dotStyle: { borderColor: "orange" },
+      activeDotStyle: { borderColor: "yellow" }
+    })
   ),
   __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Slider with tooltip, with custom `tipFormatter`'
+      "Slider with tooltip, with custom `tipFormatter`"
     ),
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(SliderWithTooltip, {
       tipFormatter: percentFormatter,
-      tipProps: { overlayClassName: 'foo' },
+      tipProps: { overlayClassName: "foo" },
       onChange: log
     })
   ),
   __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Slider with custom handle and track style.',
+      "Slider with custom handle and track style.",
       __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-        'strong',
+        "strong",
         null,
-        '(old api, will be deprecated)'
+        "(old api, will be deprecated)"
       )
     ),
-    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_rc_slider___default.a, {
+    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default.a, {
       defaultValue: 30,
-      maximumTrackStyle: { backgroundColor: 'red', height: 10 },
-      minimumTrackStyle: { backgroundColor: 'blue', height: 10 },
+      maximumTrackStyle: { backgroundColor: "red", height: 10 },
+      minimumTrackStyle: { backgroundColor: "blue", height: 10 },
       handleStyle: {
-        borderColor: 'blue',
+        borderColor: "blue",
         height: 28,
         width: 28,
         marginLeft: -14,
         marginTop: -9,
-        backgroundColor: 'black'
+        backgroundColor: "black"
       }
     })
   ),
   __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Slider with custom handle and track style.',
+      "Slider with custom handle and track style.",
       __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-        'strong',
+        "strong",
         null,
-        '(The recommended new api)'
+        "(The recommended new api)"
       )
     ),
-    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_rc_slider___default.a, {
+    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default.a, {
       defaultValue: 30,
-      trackStyle: { backgroundColor: 'blue', height: 10 },
+      trackStyle: { backgroundColor: "blue", height: 10 },
       handleStyle: {
-        borderColor: 'blue',
+        borderColor: "blue",
         height: 28,
         width: 28,
         marginLeft: -14,
         marginTop: -9,
-        backgroundColor: 'black'
+        backgroundColor: "black"
       },
-      railStyle: { backgroundColor: 'red', height: 10 }
+      railStyle: { backgroundColor: "red", height: 10 }
     })
   ),
   __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Basic Slider, disabled'
+      "Basic Slider, disabled"
     ),
-    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_rc_slider___default.a, { onChange: log, disabled: true })
+    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default.a, { onChange: log, disabled: true })
   ),
   __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Controlled Slider'
+      "Controlled Slider"
     ),
-    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_rc_slider___default.a, { value: 50 })
+    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7_eliseumds_rc_slider___default.a, { value: 50 })
   ),
   __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Customized Slider'
+      "Customized Slider"
     ),
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(CustomizedSlider, null)
   ),
   __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Slider with null value and reset button'
+      "Slider with null value and reset button"
     ),
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(NullableSlider, null)
   ),
   __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-    'div',
+    "div",
     { style: style },
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-      'p',
+      "p",
       null,
-      'Slider with dynamic `min` `max`'
+      "Slider with dynamic `min` `max`"
     ),
     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(DynamicBounds, null)
   )
-), document.getElementById('__react-content'));
+), document.getElementById("__react-content"));
 
 /***/ })
 
