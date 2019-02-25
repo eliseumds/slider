@@ -1,6 +1,6 @@
 {
-  "name": "rc-slider",
-  "version": "8.6.6",
+  "name": "eliseumds-rc-slider",
+  "version": "8.6.7",
   "description": "Slider UI component for React",
   "keywords": [
     "react",
@@ -10,13 +10,13 @@
     "input",
     "range"
   ],
-  "homepage": "http://github.com/react-component/slider/",
+  "homepage": "http://github.com/eliseumds/slider/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:react-component/slider.git"
+    "url": "git@github.com:eliseumds/slider.git"
   },
   "bugs": {
-    "url": "http://github.com/react-component/slider/issues"
+    "url": "http://github.com/eliseumds/slider/issues"
   },
   "files": [
     "assets/*.css",
@@ -31,7 +31,7 @@
   "config": {
     "port": 8005,
     "entry": {
-      "rc-slider": [
+      "eliseumds-rc-slider": [
         "./assets/index.less",
         "./src/index.js"
       ]
